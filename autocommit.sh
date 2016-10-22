@@ -10,6 +10,7 @@ date_c=`date +"%Y%m%d%H%M%S"`
 date_c=autocommit_$date_c
 
 git commit -m $date_c
+git push
 }
 
 while :
