@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# this bash script intends to git commit by time auto.
+
 autocommit(){
 	git status --short | awk {'print $2'} | while read LINE
 do
@@ -15,7 +17,6 @@ git push
 
 while :
 do
-	echo
 	date
 	autocommit
 # check time (s)
