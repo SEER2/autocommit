@@ -11,14 +11,15 @@ done
 date_c=`date +"%Y%m%d%H%M%S"`
 date_c=autocommit_$date_c
 
-git commit -m $date_c
-git push
+# silence
+git commit -m $date_c > /dev/null
+git push > /dev/null
 }
 
 while :
 do
-	date
 	autocommit
+
 # check time (s)
 	sleep 60
 done
