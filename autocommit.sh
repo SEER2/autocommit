@@ -13,7 +13,7 @@ date_c=autocommit_$date_c
 
 # silence
 git commit -m $date_c > /dev/null
-git push 0> /dev/null 2> /dev/null
+# git push 0> /dev/null 2> /dev/null
 }
 
 while :
